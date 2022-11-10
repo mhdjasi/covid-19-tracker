@@ -1,0 +1,88 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    margin: 20px 30px;
+    padding: 20px;
+    width: 400px;
+    min-height: 230px;
+    display: grid;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s;
+  }
+  
+  .card:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.01);
+  }
+  
+ 
+
+  
+  .card__title {
+    font-weight: 400;
+    color: #0746cec9;
+    font-size: 25px;
+    text-shadow: 0px 1px 2px black;
+  }
+  .card__title1 {
+    font-weight: 400;
+    color: #ff1e00b1;
+    font-size: 25px;
+    text-shadow: 0px 1px 2px black;
+  }
+  .card__title2 {
+    font-weight: 400;
+    color: #4f03a0db;
+    font-size: 25px;
+    text-shadow: 0px 1px 2px black;
+  }
+
+  .card__title3 {
+    font-weight: 400;
+    color: #0e9904fb;
+    font-size: 25px;
+    text-shadow: 0px 1px 2px black;
+  }
+  .card__title4 {
+    font-weight: 400;
+    color: #ff0303fb;
+    font-size: 25px;
+    text-shadow: 0px 1px 2px black;
+  }
+
+
+  
+  /* CARD BACKGROUNDS */
+  
+  .card-1 {
+    background: radial-gradient(#1fe4f5, #3fbafe);
+  }
+  
+  .card-2 {
+    background: radial-gradient(#fbc1cc, #fa99b2);
+  }
+  
+  .card-3 {
+    background: radial-gradient(#76b2fe, #b69efe);
+  }
+  
+  .card-4 {
+    background: radial-gradient(#60efbc, #58d5c9);
+  }
+  
+  .card-5 {
+    background: radial-gradient(#f588d8, #c0a3e5);
+  }
+  
+  /* RESPONSIVE */
+  
+  @media (max-width: 1600px) {
+    .cards {
+      justify-content: center;
+    }
+  }
+  
