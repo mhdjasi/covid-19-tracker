@@ -1,47 +1,48 @@
 import React from 'react'
 import './Card.css'
 
-function Card({data}) {
+function Card({covid}) {
+console.log(covid);
   return (
     <div className='maincard'>
-{data&&data?.map((item)=>(
-    <div class="cards">
-    <div class="card card-1">
-    <h2 class="card__title">New cases</h2>
-    <h5><span>+</span>204,268</h5>
-      <h2 class="card__title mt-5">Total cases</h2>
-      <h5>509,268,964</h5>
+
+    <div className="cards mb-3">
+    <div className="card card-1">
+    <h2 className="card__title">New cases</h2>
+    <h5><span>+</span>{covid.new_cases}</h5>
+      <h2 className="card__title mt-1 mt-lg-5">Total cases</h2>
+      <h5>{covid.total_cases}</h5>
     </div>
-    <div class="card card-2">
-    <h2 class="card__title1">New Deaths</h2>
-    <h5><span>+</span>204,268</h5>
-      <h2 class="card__title1 mt-5">Total Deaths</h2>
-      <h5>6,242,509</h5>
+    <div className="card card-2">
+    <h2 className="card__title1">New Deaths</h2>
+    <h5><span>+</span>{covid.new_deaths}</h5>
+      <h2 className="card__title1 mt-1 mt-lg-5">Total Deaths</h2>
+      <h5>{covid.total_deaths}</h5>
     </div>
-    <div class="card card-3">
+    <div className="card card-3">
     
-      <h2 class="card__title2 mt-5">Total Active</h2>
-      <h5 className='mb-5'>6,242,509</h5>
+      <h2 className="card__title2 mt-5 mt-lg-5">Active Cases</h2>
+      <h5 className='mb-5'>{covid.active_cases}</h5>
     </div>
-    <div class="card card-4">
+    <div className="card card-4">
     
-      <h2 class="card__title3 mt-5">Total Recovered</h2>
-      <h5 className='mb-5'>6,242,509</h5>
+      <h2 className="card__title3 mt-5 mt-lg-5">Total Recovered</h2>
+      <h5 className='mb-5'>{covid.total_recovered}</h5>
     </div>
-    <div class="card card-2">
+    <div className="card card-2">
     
-    <h2 class="card__title4 mt-5">Serious Critical</h2>
-    <h5 className='mb-5'>42,510</h5>
+    <h2 className="card__title4 mt-5 mt-lg-5">Serious Critical</h2>
+    <h5 className='mb-5'>{covid.serious_critical}</h5>
   </div>
-    <div class="card card-1">
-      <h2 class="card__title mt-5">Statistic taken at</h2>
-      <h5 className='mb-5'></h5>
+    <div className="card card-1">
+      <h2 className="card__title mt-5">Last Updated</h2>
+      <h5 className='mb-5'>{covid.statistic_taken_at}</h5>
 
     </div>
 
 
   </div>
-  ))}
+
 
  
 

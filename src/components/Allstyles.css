@@ -10,10 +10,13 @@
     color: yellow;
     text-align: center;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
     
 }
 .header h2{
     font-size: 30px;
+    text-align: center;
 }
 .covid{
     color: red;

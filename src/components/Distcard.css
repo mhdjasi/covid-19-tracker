@@ -1,0 +1,84 @@
+.disthead{
+    text-align: center;
+    padding-top: 20px;
+    color: red;
+    text-shadow: 0px 1px 2px black;
+}
+.keralacard {
+    margin: 10px 10px;
+    padding: 8px;
+    text-align: center;
+    width: 250px;
+    height: 136px;
+    display: grid;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s;
+    margin-bottom: 50px;
+  }
+  .itemcard{
+    margin: 10px 10px;
+    padding: 8px;
+    text-align: center;
+    width: 250px;
+    height: 176px;
+    display: grid;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s;
+    margin-bottom: 50px;
+  }
+.card-11 {
+    background: radial-gradient(#c9ad5b, #bcbf04);
+  }
+  .card-12 {
+    background: radial-gradient(#c9657c, #761656);
+  }
+
+  .card-13 {
+    background: radial-gradient(#7672b4, #6132d7);
+  }
+  .card-14 {
+    background: radial-gradient(#71bdbf, #219797);
+  }
+  .card-15 {
+    background: radial-gradient(#71bf71, #358e1f);
+  }
+  .card-16 {
+    background: radial-gradient(#bf8271, #b02020);
+  }
+  .card-17 {
+    background: radial-gradient(#bb8ac5, #9120b0);
+  }
+  .card__title0{
+color: rgb(255, 255, 255);
+text-shadow: 0px 1px 2px black;
+font-size: 20px;
+  }
+  .card h5{
+    font-size: 18px;
+  }
+
+  @media (max-width:767px){
+
+    .card {
+        margin: 10px 30px;
+        padding: 8px;
+        text-align: center;
+        width: 450px;
+        height: 150px;
+        display: grid;
+        border-radius: 10px;
+        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+        transition: all 0.2s;
+        margin-bottom: 50px;
+      }
+      .card__title0{
+        color: rgb(255, 255, 255);
+        text-shadow: 0px 1px 2px black;
+        font-size: 19px;
+          }
+          .card h5{
+            font-size: 18px;
+          }
+  }
